@@ -13,13 +13,13 @@ export default function Home() {
     </div>
   </div>
   {/*  Navbar */}
-  <div className="md:shrink-0">
-      <div className="flex flex-col items-center justify-center h-48 w-full content-center object-cover md:h-full md:w-48">
-      <nav className="flex flex-col md:flex-row p-1 md:p-4 lg:p-6 xl:8" aria-label="In-page jump links">
-      <ul className="md:flex-wrap">
-        <li className="md:flex items-center py-1 md:w-1/3"><img className="object-scale-down h-5 md:block lg:block sm:hidden xs: hidden" src="/images/sakura_icon.png"/><span className="ml-2 hover:text-rose-600 cursor-pointer transition duration-300 ease-in-out">About</span></li>
-        <li className="md:flex items-center py-1 md:w-1/3"><img className="object-scale-down h-5" src="/images/sakura_icon.png"/><span className="ml-2 hover:text-rose-600 cursor-pointer transition duration-300 ease-in-out">Projects</span></li>
-        <li className="md:flex items-center py-1 md:w-1/3"><img className="object-scale-down h-5" src="/images/sakura_icon.png"/><span className="ml-2 hover:text-rose-600 cursor-pointer transition duration-300 ease-in-out">Experience</span></li>
+  <div className="md:shrink-0 flex flex-wrap">
+      <div className="flex flex-col items-center justify-center h-full w-full content-center object-cover md:h-full md:w-48">
+      <nav className="flex flex-col sm:flex-row p-1 md:p-4 lg:p-6 xl:8" aria-label="In-page jump links">
+      <ul className="flex md:flex-col md:flex-wrap">
+        <li className="md:flex items-center py-1 lg:px-4"><img className="mr-2 object-scale-down h-5 md:block lg:block sm:hidden xs: hidden" src="/images/sakura_icon.png"/><span className="ml-2 hover:text-rose-600 cursor-pointer transition duration-300 ease-in-out">About</span><span className="lg:hidden md:hidden xl:hidden px-3">·</span></li>
+        <li className="md:flex items-center py-1 lg:px-4"><img className="mr-2 object-scale-down h-5 md:block lg:block sm:hidden xs: hidden" src="/images/sakura_icon.png"/><span className="ml-2 hover:text-rose-600 cursor-pointer transition duration-300 ease-in-out">Projects</span><span className="lg:hidden md:hidden xl:hidden px-3">·</span></li>
+        <li className="md:flex items-center py-1 lg:px-4"><img className="mr-2 object-scale-down h-5 md:block lg:block sm:hidden xs: hidden" src="/images/sakura_icon.png"/><span className="ml-2 hover:text-rose-600 cursor-pointer transition duration-300 ease-in-out">Experience</span></li>
   </ul>
       </nav>
       <div className="flex space-x-4 py-3">
@@ -32,10 +32,10 @@ export default function Home() {
   </a>
       </div>
       </div>
+      <div className="p-8 flex flex-col items-center justify-center h-full w-full content-center object-cover md:h-full md:w-48">rendering area</div>
       </div>
-      
     </div>
-    
+
     </main>
   )
   }
