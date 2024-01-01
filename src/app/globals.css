@@ -23,3 +23,7 @@ body.dark {
   --background-start-rgb: 29, 39, 64;
   --background-end-rgb: 61, 72, 99;
 }
+
+html {
+  scroll-behavior: smooth;
+}

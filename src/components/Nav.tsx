@@ -6,9 +6,9 @@ export default function Nav() {
       <div className="flex flex-col items-center justify-center h-full w-full content-center object-cover md:h-full md:w-48">
       <nav className="flex flex-col sm:flex-row p-1 md:p-4 lg:p-6 xl:8" aria-label="In-page jump links">
       <ul className="flex md:flex-col md:flex-wrap">
-        <li className="md:flex items-center py-1 lg:px-4"><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">About</span><span className="lg:hidden md:hidden xl:hidden px-3">·</span></li>
-        <li className="md:flex items-center py-1 lg:px-4"><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">Projects</span><span className="lg:hidden md:hidden xl:hidden px-3">·</span></li>
-        <li className="md:flex items-center py-1 lg:px-4"><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">Experience</span></li>
+        <li className="md:flex items-center py-1 lg:px-4"><a href="#about" data-te-smooth-scroll-init><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">About</span></a><span className="lg:hidden md:hidden xl:hidden px-3">·</span></li>
+        <li className="md:flex items-center py-1 lg:px-4"><a href="#projects" data-te-smooth-scroll-init><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">Projects</span></a><span className="lg:hidden md:hidden xl:hidden px-3">·</span></li>
+        <li className="md:flex items-center py-1 lg:px-4"><a href="#experience" data-te-smooth-scroll-init><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">Experience</span></a></li>
   </ul>
       </nav>
       <div className="flex space-x-4 py-3">
@@ -23,11 +23,11 @@ export default function Nav() {
   </a>
       </div>
       </div>
-      <div className="p-8 flex flex-col items-center justify-center h-full w-full content-center object-cover md:h-full md:w-48">
+      <div className="p-8 flex flex-col items-center justify-center w-full content-center object-cover md:h-full md:w-[calc(100%-12rem)] content-center object-cover md:h-fill">
         <About/>
         <Projects/>
         <Experience/>
-      </div>
+        </div>
       </div>
     )
 }
