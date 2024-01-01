@@ -10,7 +10,7 @@ export default function Home() {
   <div className="max-w-md mx-auto bg-gradient-to-b from-white/50 rounded-xl shadow-md overflow-hidden lg:max-w-[80vw] md:max-w-2xl min-h-[75vh]">
   <div className="md:flex">
     <div className="md:shrink-0">
-      <img className="h-48 w-full object-cover md:h-full md:w-48" src="/images/portrait.png" alt="Picture of Julia Fitzgerald"/>
+      <img className="h-48 w-full object-cover md:h-full md:w-48 aspect-ratio-1/1" src="/images/portrait.png" alt="Picture of Julia Fitzgerald"/>
     </div>
     <div className="p-8">
     <a href="#" className="block mt-1 text-4xl leading-tight font-lg text-black dark:text-slate-300 tracking-wider">Julia Fitzgerald</a>
