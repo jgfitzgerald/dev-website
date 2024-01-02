@@ -12,7 +12,7 @@ export default function Home() {
   <div className="max-w-md mx-auto bg-gradient-to-b from-white/50 rounded-xl shadow-md lg:max-w-[80vw] md:max-w-2xl min-h-[75vh]">
   <div className="md:flex">
     <div className="md:shrink-0">
-      <Image className="h-48 w-full object-cover md:h-full md:w-48 aspect-ratio-1/1" src="/images/portrait.png" alt="Picture of Julia Fitzgerald" width="0" height="0" unoptimized={true}/>
+      <Image className="h-48 w-full object-cover md:h-full md:w-48 aspect-ratio-1/1" src="images/portrait.png" alt="Picture of Julia Fitzgerald" width="0" height="0" unoptimized={true}/>
     </div>
     <div className="p-8">
     <a href="#" className="block mt-1 text-4xl leading-tight font-lg text-black dark:text-slate-300 tracking-wider">Julia Fitzgerald</a>
