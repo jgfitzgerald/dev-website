@@ -1,6 +1,7 @@
 import React from 'react';
 import { About, Projects, Experience, ToggleTheme, Nav } from '../components/';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -11,12 +12,12 @@ export default function Home() {
   <div className="max-w-md mx-auto bg-gradient-to-b from-white/50 rounded-xl shadow-md lg:max-w-[80vw] md:max-w-2xl min-h-[75vh]">
   <div className="md:flex">
     <div className="md:shrink-0">
-      <img className="h-48 w-full object-cover md:h-full md:w-48 aspect-ratio-1/1" src="/images/portrait.png" alt="Picture of Julia Fitzgerald"/>
+      <Image className="h-48 w-full object-cover md:h-full md:w-48 aspect-ratio-1/1" src="/images/portrait.png" alt="Picture of Julia Fitzgerald" width="0" height="0" unoptimized={true}/>
     </div>
     <div className="p-8">
     <a href="#" className="block mt-1 text-4xl leading-tight font-lg text-black dark:text-slate-300 tracking-wider">Julia Fitzgerald</a>
-      <div className="uppercase tracking-wide text-lg text-rose-600 dark:text-green-100 font-semibold">Web Developer</div>
-      <p className="mt-2 text-black dark:text-slate-300">I'm a frontend developer with 2 years of applied experience. My goal is to make technology more accessible to everyone, one eye-catching website at a time. When I'm not at my desk I enjoy hiking, video games, and <span className="text-rose-600 dark:text-green-100">rolling natural 20s</span>.</p>
+      <div className="uppercase tracking-wide text-lg text-rose-600 dark:text-green-100 font-semibold">Software Developer</div>
+      <p className="mt-2 text-black dark:text-slate-300">I&rsquo;m a full stack developer with 2 years of applied experience. I enjoy building seamless user interfaces for the web. My goal is to make technology more accessible to everyone, one eye-catching website at a time. When I&rsquo;m not at my desk I enjoy hiking, video games, and <span className="text-rose-600 dark:text-green-100">rolling natural 20s</span>.</p>
     </div>
   </div>
   <Nav />
