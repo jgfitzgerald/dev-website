@@ -1,4 +1,4 @@
-import { About, Projects, Experience } from '../components/';
+import { About, Projects, Experience } from '.';
 
 export default function Nav() {
     return (
