@@ -1,12 +1,58 @@
+'use client'
+import { Job } from '@/types';
+import { useEffect, useState } from 'react';
+
+
+const fetchData = async () => {
+  try {
+    const response = await fetch('/api/jobs');
+    const data = await response.json();
+    return data as Job[];
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return [];
+  }
+};
+
 export default function Home() {
-    return (<div id="experience" className="mb-4"><div className="mb-1.5 uppercase tracking-wide text-lg text-rose-600 dark:text-green-100 font-semibold">Experience</div>
-    <p className="mt-2 text-black dark:text-slate-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tellus at orci iaculis ultrices. Curabitur imperdiet enim elementum facilisis pellentesque. Morbi facilisis auctor orci, ac convallis leo sodales a. Donec vel sagittis lectus, feugiat hendrerit libero. Suspendisse id lacus et ipsum fringilla sodales. Ut sed justo turpis. Sed nec elit congue, pretium orci et, venenatis urna. Integer id suscipit libero. Sed ac aliquam risus, non bibendum elit. Quisque a tincidunt sapien, ac cursus leo. Duis ut mauris lorem. Suspendisse cursus libero et ipsum viverra ornare. Vivamus quis mi justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos..
-    
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tellus at orci iaculis ultrices. Curabitur imperdiet enim elementum facilisis pellentesque. Morbi facilisis auctor orci, ac convallis leo sodales a. Donec vel sagittis lectus, feugiat hendrerit libero. Suspendisse id lacus et ipsum fringilla sodales. Ut sed justo turpis. Sed nec elit congue, pretium orci et, venenatis urna. Integer id suscipit libero. Sed ac aliquam risus, non bibendum elit. Quisque a tincidunt sapien, ac cursus leo. Duis ut mauris lorem. Suspendisse cursus libero et ipsum viverra ornare. Vivamus quis mi justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos..
-    
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tellus at orci iaculis ultrices. Curabitur imperdiet enim elementum facilisis pellentesque. Morbi facilisis auctor orci, ac convallis leo sodales a. Donec vel sagittis lectus, feugiat hendrerit libero. Suspendisse id lacus et ipsum fringilla sodales. Ut sed justo turpis. Sed nec elit congue, pretium orci et, venenatis urna. Integer id suscipit libero. Sed ac aliquam risus, non bibendum elit. Quisque a tincidunt sapien, ac cursus leo. Duis ut mauris lorem. Suspendisse cursus libero et ipsum viverra ornare. Vivamus quis mi justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos..
-    
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tellus at orci iaculis ultrices. Curabitur imperdiet enim elementum facilisis pellentesque. Morbi facilisis auctor orci, ac convallis leo sodales a. Donec vel sagittis lectus, feugiat hendrerit libero. Suspendisse id lacus et ipsum fringilla sodales. Ut sed justo turpis. Sed nec elit congue, pretium orci et, venenatis urna. Integer id suscipit libero. Sed ac aliquam risus, non bibendum elit. Quisque a tincidunt sapien, ac cursus leo. Duis ut mauris lorem. Suspendisse cursus libero et ipsum viverra ornare. Vivamus quis mi justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos..
-    
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tellus at orci iaculis ultrices. Curabitur imperdiet enim elementum facilisis pellentesque. Morbi facilisis auctor orci, ac convallis leo sodales a. Donec vel sagittis lectus, feugiat hendrerit libero. Suspendisse id lacus et ipsum fringilla sodales. Ut sed justo turpis. Sed nec elit congue, pretium orci et, venenatis urna. Integer id suscipit libero. Sed ac aliquam risus, non bibendum elit. Quisque a tincidunt sapien, ac cursus leo. Duis ut mauris lorem. Suspendisse cursus libero et ipsum viverra ornare. Vivamus quis mi justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos..</p></div>)
-}
+
+  const [ jobs, setJobs ] = useState<Job[]>([]);
+
+  useEffect(() => {
+    const fetchJobs = async () => {
+      const jobsData = await fetchData();
+      setJobs(jobsData);
+    };
+
+    fetchJobs();
+
+  }, []);
+
+  {jobs && jobs.map((job) => {
+    console.log('Job:', job);}
+  )}
+
+      return (
+        <div id="experience" className="mb-4 w-full my-3">
+          <div className="uppercase tracking-wide text-lg text-rose-600 dark:text-green-100 font-semibold">
+            Experience
+          </div>
+                {jobs && jobs.map((job) => (
+        <div key={job.title} className=" rounded-xl flex flex-wrap md:flex-no-wrap hover:bg-white hover:bg-opacity-10 border-2 border-transparent hover:border-2 hover:border-white transition duration-300 px-5 py-3 ease-in-out rounded mb-4 hover:border-opacity-10">
+          <div className="w-full md:w-2/5 my-2 text-black text-opacity-50 font-semibold uppercase text-sm">{job.range}</div>
+          <div className="w-full md:w-3/5">
+            <p className="my-2 mr-2">
+              {job.title} - {job.company}
+            </p>
+            <p className="my-2 text-sm text-black text-opacity-50 dark:text-slate-300">{job.description}</p>
+            <div className="flex flex-wrap">
+            {job.tags?.map((tag, index) => (
+              <span key={index} className="text-sm bg-opacity-45 dark:bg-opacity-45 bg-rose-500 dark:bg-emerald-500 px-2 py-1 text-white rounded-lg m-1">{tag}</span>
+            ))}
+            </div>
+          </div>
+        </div>
+      ))}
+        </div>
+      );
+} 

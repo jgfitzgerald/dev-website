@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Projects, Experience, ToggleTheme, Nav } from '../components/';
+import { About, Projects, Experience, ToggleTheme, Nav } from '../components';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import Image from 'next/image'
 

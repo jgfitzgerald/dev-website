@@ -34,7 +34,7 @@ export const ScrollToTop = () => {
       <button
         type="button"
         onClick={scrollToTop}
-        className={isVisible ? 'dark:bg-green-100 bg-rose-600 dark:hover:bg-white hover:bg-pink-700 inline-flex items-center rounded-full p-3 md:p-4 lg:p-5 text-white shadow-sm transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 opacity-100' : 'opacity-0'}
+        className={isVisible ? 'dark:bg-green-100 bg-rose-600 dark:hover:bg-white hover:bg-pink-700 inline-flex items-center rounded-full p-3 md:p-4 lg:p-5 text-white shadow-sm transition-opacity focus:outline-none opacity-100' : 'opacity-0'}
       >
         <FontAwesomeIcon icon={faArrowUp} className="dark:text-blue-900 text-white text-lg md:text-xl lg:text-2xl"/>
       </button>
