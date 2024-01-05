@@ -8,3 +8,16 @@ export interface Job {
     description: string;
     tags: string[];
   }
+
+export interface Project {
+    id: number;
+    date: string;
+    title: string;
+    github: string;
+    external: string;
+    tech: string[];
+    company: string;
+    showInProjects: boolean;
+    description: string;
+  };
+  

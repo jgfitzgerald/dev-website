@@ -1,0 +1,21 @@
+{
+  "id": 3,
+  "date": "2023-03-10",
+  "title": "RecipeGPT: An AI Recipe Generator",
+  "github": "",
+  "external": "",
+  "tech": [
+      "Javascript",
+      "React",
+      "HTML5",
+      "CSS3",
+      "Java",
+      "Spring Boot",
+      "Dart",
+      "Flutter",
+      "OpenAI API"
+  ],
+  "company": "",
+  "showInProjects": true,
+  "description": "Honored as the winning advanced project at MtAHacks 2023. A web and mobile application that generates recipes based on ingredients you have in your kitchen using ChatGPT."
+}
