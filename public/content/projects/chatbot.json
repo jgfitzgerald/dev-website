@@ -2,12 +2,13 @@
   "id": 1,
   "date": "2020-09-01",
   "title": "Interactive Chatbot",
-  "github": "",
+  "github": "https://github.com/jgfitzgerald/fa-chatbot",
   "external": "",
   "tech": [
       "Python",
       "Javascript",
-      "HTML/CSS"
+      "HTML5",
+      "CSS3"
   ],
   "company": "Digital Eagle Media",
   "showInProjects": true,

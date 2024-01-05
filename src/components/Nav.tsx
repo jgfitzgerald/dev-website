@@ -1,4 +1,4 @@
-import { About, Projects, Experience } from '.';
+import { About, Projects, Experience, Credits } from '.';
 
 export default function Nav() {
     return (
@@ -28,6 +28,7 @@ export default function Nav() {
         <Experience/>
         <Projects/>
         </div>
+        <Credits/>
       </div>
     )
 }

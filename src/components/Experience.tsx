@@ -34,6 +34,12 @@ export default function Home() {
             Experience
           </div>
                 {jobs && jobs.map((job) => (
+                  <a
+                  key={job.title}
+                  href={job.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
         <div key={job.title} className=" rounded-xl flex flex-wrap md:flex-no-wrap hover:bg-white hover:bg-opacity-10 border-2 border-transparent hover:border-2 hover:border-white transition duration-300 px-5 py-3 ease-in-out rounded mb-4 hover:border-opacity-10">
           <div className="w-full md:w-2/5 my-2 text-black text-opacity-50 font-semibold uppercase text-sm dark:text-white dark:text-opacity-50">{job.range}</div>
           <div className="w-full md:w-3/5">
@@ -47,7 +53,7 @@ export default function Home() {
             ))}
             </div>
           </div>
-        </div>
+        </div></a>
       ))}
         </div>
       );

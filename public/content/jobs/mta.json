@@ -4,7 +4,7 @@
     "company": "Mount Allison University",
     "location": "Sackville, NB (Remote)",
     "range": "January 2023 - Present",
-    "url": "",
+    "url": "https://mta.ca/",
     "description": "Collaborated with the Mount Allison Classic's department to conceptualize and design a user-friendly interface for the DICES project. As a web developer, I took on the responsibility of developing a responsive and accessible web client, allowing users to query specific details about ancient texts. I am currently in the process of migrating the user interface to NextJS and Tailwind.",
-    "tags": ["Python", "Typescript", "Django", "NextJS", "Tailwind", "React"]
+    "tags": ["Python", "Typescript", "Django", "Next.js", "Tailwind", "React"]
 }

@@ -34,6 +34,12 @@ export default function Home() {
       <div className="uppercase tracking-wide text-lg text-rose-600 dark:text-green-100 font-semibold">Projects</div>
       <div className="flex flex-wrap-reverse md:flex-no-wrap">
         {projects && projects.map((proj) => (
+          <a
+          key={proj.title}
+          href={proj.github}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div key={proj.title} className="w-full flex flex-wrap-reverse md:flex-no-wrap rounded-xl flex flex-wrap md:flex-no-wrap hover:bg-white hover:bg-opacity-10 border-2 border-transparent hover:border-2 hover:border-white transition duration-300 px-5 py-3 ease-in-out rounded mb-4 hover:border-opacity-10">
             <div className="w-full md:w-2/5 flex items-center justify-center md:justify-start">
             <Image
@@ -55,7 +61,7 @@ export default function Home() {
         ))}
         </div>
             </div>
-          </div>
+          </div></a>
         ))}
       </div>
     </div>

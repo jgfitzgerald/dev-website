@@ -2,13 +2,13 @@
   "id": 2,
   "date": "2024-01-01",
   "title": "DICES - Digital Initiative for Classics: Epic Speeches",
-  "github": "",
+  "github": "https://github.com/jgfitzgerald/dices-client",
   "external": "",
   "tech": [
       "Javascript",
       "TypeScript",
       "React",
-      "NextJS",
+      "Next.js",
       "Tailwind"
   ],
   "company": "Mount Allison University",

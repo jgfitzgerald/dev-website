@@ -2,12 +2,12 @@
     "id": 5,
     "date": "2024-01-01",
     "title": "Developer Portfolio Website",
-    "github": "",
+    "github": "https://github.com/jgfitzgerald/dev-website",
     "external": "",
     "tech": [
         "TypeScript",
         "React",
-        "NextJS",
+        "Next.js",
         "Tailwind"
     ],
     "showInProjects": true,
