@@ -2,7 +2,6 @@ import React from 'react';
 import { About, Projects, Experience, ToggleTheme, Nav } from '../components';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import Image from 'next/image'
-import Spotlight, { SpotlightCard } from '@/components/spotlight';
 
 export default function Home() {
   return (
