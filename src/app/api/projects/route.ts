@@ -18,6 +18,7 @@ export async function GET(request: Request) {
         const data = JSON.parse(fileContent);
 
         const project: Project = {
+          id: data.id || null,
           date: data.date || "",
           title: data.title || "",
           github: data.github || "",
@@ -31,7 +32,6 @@ export async function GET(request: Request) {
         projectList.push(project);
       } catch (parseError) {
         console.error(`Error parsing JSON in file ${file}:`, parseError);
-        // Optionally handle or log parsing errors
       }
     });
 

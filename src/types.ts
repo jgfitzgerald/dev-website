@@ -10,6 +10,7 @@ export interface Job {
   }
 
 export interface Project {
+    id: number;
     date: string;
     title: string;
     github: string;

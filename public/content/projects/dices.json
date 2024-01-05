@@ -1,4 +1,5 @@
 {
+  "id": 2,
   "date": "2024-01-01",
   "title": "DICES - Digital Initiative for Classics: Epic Speeches",
   "github": "",
@@ -12,5 +13,5 @@
   ],
   "company": "Mount Allison University",
   "showInProjects": true,
-  "description": "Description here"
+  "description": "A web client that allows users to query specific details over a database of Latin and Roman epics and texts. For example, a user could search intances of a character speaking to another character, specific speeches, or characters from a specific author. Currently a work in progress migrating to NextJS."
 }

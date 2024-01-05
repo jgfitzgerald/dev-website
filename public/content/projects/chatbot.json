@@ -1,4 +1,5 @@
 {
+  "id": 1,
   "date": "2020-09-01",
   "title": "Interactive Chatbot",
   "github": "",
@@ -10,5 +11,5 @@
   ],
   "company": "Digital Eagle Media",
   "showInProjects": true,
-  "description": "Description here"
+  "description": "An interactive text-based chatbot that provides users with information about first aid courses and selects suitable courses for the user based on their answers to questions."
 }

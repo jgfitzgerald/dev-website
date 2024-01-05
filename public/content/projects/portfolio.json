@@ -1,0 +1,15 @@
+{
+    "id": 5,
+    "date": "2024-01-01",
+    "title": "Developer Portfolio Website",
+    "github": "",
+    "external": "",
+    "tech": [
+        "TypeScript",
+        "React",
+        "NextJS",
+        "Tailwind"
+    ],
+    "showInProjects": true,
+    "description": "The website you are looking at right now! A responsive and accessible web interface that showcases my experience and acts as a portfolio for my projects. Made using NextJS and Tailwind."
+  }

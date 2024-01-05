@@ -1,4 +1,5 @@
 {
+  "id": 4,
   "date": "2023-03-10",
   "title": "Scrabble: Web Application",
   "github": "",
@@ -11,5 +12,5 @@
   ],
   "company": "",
   "showInProjects": true,
-  "description": "Description here"
+  "description": "A web-based implementation of the popular board game Scrabble using Spring Boot and React."
 }

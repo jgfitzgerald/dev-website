@@ -2,13 +2,13 @@ import React from 'react';
 import { About, Projects, Experience, ToggleTheme, Nav } from '../components';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import Image from 'next/image'
+import Spotlight, { SpotlightCard } from '@/components/spotlight';
 
 export default function Home() {
   return (
   <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
   <ToggleTheme />
-
   <div className="max-w-md mx-auto bg-gradient-to-b from-white/50 rounded-xl shadow-md lg:max-w-[80vw] md:max-w-2xl min-h-[75vh]">
   <div className="md:flex">
     <div className="md:shrink-0">
