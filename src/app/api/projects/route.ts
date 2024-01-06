@@ -22,10 +22,8 @@ export async function GET(request: Request) {
           date: data.date || "",
           title: data.title || "",
           github: data.github || "",
-          external: data.external || "",
           tech: data.tech || [],
           company: data.company || "",
-          showInProjects: data.showInProjects || false,
           description: data.description || ""
         };
 
@@ -33,6 +31,12 @@ export async function GET(request: Request) {
       } catch (parseError) {
         console.error(`Error parsing JSON in file ${file}:`, parseError);
       }
+    });
+
+    projectList.sort((a, b) => {
+      const dateA = new Date(a.date).getTime();
+      const dateB = new Date(b.date).getTime();
+      return dateA - dateB;
     });
 
     return NextResponse.json(projectList);
