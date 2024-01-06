@@ -3,12 +3,12 @@ import { About, Projects, Experience, Credits } from '.';
 export default function Nav() {
     return (
         <div className="md:shrink-0 flex flex-wrap">
-      <div id="sticky-header" className="self-start flex flex-col items-center w-full content-center md:w-48 md:sticky top-10 z-50">
+      <div id="sticky-header" className="self-start flex flex-col items-center w-full content-center md:w-48 md:sticky top-10">
       <nav className="flex flex-col sm:flex-row p-1 md:p-4 lg:p-6 xl:8" aria-label="In-page jump links">
       <ul className="flex md:flex-col md:flex-wrap">
         <li className="md:flex items-center py-1 lg:px-4"><a href="#about" data-te-smooth-scroll-init><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">About</span></a><span className="lg:hidden md:hidden xl:hidden px-3">·</span></li>
-        <li className="md:flex items-center py-1 lg:px-4"><a href="#experience" data-te-smooth-scroll-init><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">Experience</span></a></li>
-        <li className="md:flex items-center py-1 lg:px-4"><a href="#projects" data-te-smooth-scroll-init><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">Projects</span></a><span className="lg:hidden md:hidden xl:hidden px-3">·</span></li>
+        <li className="md:flex items-center py-1 lg:px-4"><a href="#experience" data-te-smooth-scroll-init><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">Experience</span></a><span className="lg:hidden md:hidden xl:hidden px-3">·</span></li>
+        <li className="md:flex items-center py-1 lg:px-4"><a href="#projects" data-te-smooth-scroll-init><span className="ml-2 hover:text-rose-600 dark:hover:text-green-100 hover:italic cursor-pointer transition duration-300 ease-in-out">Projects</span></a></li>
   </ul>
       </nav>
       <div className="flex space-x-4 py-3">
