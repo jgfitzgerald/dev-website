@@ -6,9 +6,9 @@ import Image from 'next/image'
 export default function Home() {
 
   return (
-  <main className="flex min-h-screen flex-col items-center justify-between p-24">
+  <main className="flex min-h-screen md:flex-col justify-center items-center md:p-24">
   <Loading />
-  <div id="page-body" className="max-w-md mx-auto bg-gradient-to-b from-white/50 rounded-xl shadow-md lg:max-w-[80vw] md:max-w-2xl min-h-[75vh]">
+  <div id="page-body" className="bg-gradient-to-b from-white/50 shadow-md rounded-xl mx-auto xs:max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-[80vw] md:min-h-[75vh]">
   <ToggleTheme />
   <div className="md:flex">
     <div className="md:shrink-0">
