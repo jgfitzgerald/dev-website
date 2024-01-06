@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 240, 65, 114;
+  --background-start-rgb: 219, 127, 176;
   --background-end-rgb: 242, 212, 160;
 }
 
@@ -26,4 +26,8 @@ body.dark {
 
 html {
   scroll-behavior: smooth;
+}
+
+body.loading {
+  visibility: hidden;
 }
