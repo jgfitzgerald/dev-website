@@ -1,8 +1,14 @@
-# Developer Web Portfolio
+<h1 align="center">Developer Web Portfolio</h1>
 
-[![Vercel Deployment](https://vercel.com/button)](https://vercel.com/jgfitzgerald/dev-website)
+<p align="center">
+  <img width="600" alt="Screen Shot 2024-01-06 at 6 00 51 PM" src="https://github.com/jgfitzgerald/dev-website/assets/104915352/50ca0ef2-851b-4c5b-96d1-6e374892fdfc">
+</p>
 
-A responsive, accessible web interface that serves as an online resume.
+<p align="center">
+  <a href="https://vercel.com/jgfitzgerald/dev-website">
+    <img src="https://vercel.com/button" alt="Vercel Deployment">
+  </a>
+</p>
 
 ## Features
 
@@ -22,3 +28,7 @@ A responsive, accessible web interface that serves as an online resume.
    ```bash
    yarn dev
 6. Deploy with Vercel.
+
+## Usage
+
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
