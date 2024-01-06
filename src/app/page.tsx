@@ -7,8 +7,9 @@ export default function Home() {
 
   return (
   <main className="flex min-h-screen flex-col items-center justify-between p-24">
+  <Loading />
+  <div id="page-body" className="max-w-md mx-auto bg-gradient-to-b from-white/50 rounded-xl shadow-md lg:max-w-[80vw] md:max-w-2xl min-h-[75vh]">
   <ToggleTheme />
-  <div className="max-w-md mx-auto bg-gradient-to-b from-white/50 rounded-xl shadow-md lg:max-w-[80vw] md:max-w-2xl min-h-[75vh]">
   <div className="md:flex">
     <div className="md:shrink-0">
       <Image className="h-48 w-full object-cover md:h-full md:w-48 aspect-ratio-1/1" src="images/portrait.png" alt="Picture of Julia Fitzgerald" width="0" height="0" unoptimized={true}/>

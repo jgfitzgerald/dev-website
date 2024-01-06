@@ -16,6 +16,7 @@ body {
     rgb(var(--background-end-rgb))
   )
   rgb(var(--background-start-rgb));
+  overflow: hidden;
 }
 
 body.dark {
@@ -26,8 +27,4 @@ body.dark {
 
 html {
   scroll-behavior: smooth;
-}
-
-body.loading {
-  visibility: hidden;
 }
