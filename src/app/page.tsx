@@ -17,7 +17,7 @@ export default function Home() {
     <div className="p-8">
     <a href="#" className="block mt-1 text-4xl leading-tight font-lg text-black dark:text-slate-300 tracking-wider">Julia Fitzgerald</a>
       <div className="uppercase tracking-wide text-lg text-rose-600 dark:text-green-100 font-semibold">Software Developer</div>
-      <p className="mt-2 text-black dark:text-slate-300">I&rsquo;m a full stack developer with 2 years of applied experience. I enjoy building seamless user interfaces for the web. My goal is to make technology more accessible to everyone, one eye-catching website at a time. When I&rsquo;m not at my desk I enjoy hiking, video games, and <span className="text-rose-600 dark:text-green-100">rolling natural 20s</span>.</p>
+      <p className="mt-2 text-black dark:text-slate-300">I&rsquo;m a full-stack developer with two years of hands-on experience based in Saint John, New Brunswick, Canada. I enjoy creating seamless and visually appealing user interfaces for the web. My passion lies in making technology accessible to everyone, with the belief that each website I create contributes to this mission. Away from the screen, I find joy in hiking, sewing, and board games.</p>
     </div>
   </div>
   <Nav />

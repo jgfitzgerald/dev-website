@@ -1,9 +1,8 @@
 {
   "id": 4,
-  "date": "2023-03-10",
+  "date": "2022-01-11",
   "title": "Scrabble: Web Application",
   "github": "https://github.com/jgfitzgerald/scrabble",
-  "external": "",
   "tech": [
       "Java",
       "Spring Boot",
@@ -11,6 +10,5 @@
       "React"
   ],
   "company": "",
-  "showInProjects": true,
   "description": "A web-based implementation of the popular board game Scrabble using Spring Boot and React."
 }

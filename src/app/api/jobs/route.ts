@@ -31,6 +31,12 @@ export async function GET(request: Request) {
     }
     });
 
+    jobsList.sort((a, b) => {
+      const dateA = new Date(a.date).getTime();
+      const dateB = new Date(b.date).getTime();
+      return dateB - dateA;
+    });
+
     return NextResponse.json(jobsList);
   } catch (error) {
     console.error('Error reading jobs directory:', error);
