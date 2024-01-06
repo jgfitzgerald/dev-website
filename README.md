@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="jgfitzgerald.vercel.app">
+  <a href="https://vercel.com/jgfitzgerald/dev-website">
     <img src="https://vercel.com/button" alt="Vercel Deployment">
   </a>
 </p>
