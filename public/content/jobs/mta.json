@@ -6,5 +6,5 @@
     "range": "January 2023 - Present",
     "url": "https://mta.ca/",
     "description": "Collaborated with the Mount Allison Classic's department to conceptualize and design a user-friendly interface for the DICES project. As a web developer, I took on the responsibility of developing a responsive and accessible web client, allowing users to query specific details about ancient texts.",
-    "tags": ["Python", "Typescript", "Django", "Next.js", "Tailwind", "React"]
+    "tags": ["Django", "Python", "Tailwind"]
 }
