@@ -4,11 +4,9 @@
   "title": "DICES - Digital Initiative for Classics: Epic Speeches",
   "github": "https://github.com/jgfitzgerald/dices-client",
   "tech": [
-      "Javascript",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Tailwind"
+      "Django",
+      "Python",
+      "TailwindCSS"
   ],
   "company": "Mount Allison University",
   "description": "A web client that allows users to query specific details over a database of Latin and Roman epics and texts. For example, a user could search intances of a character speaking to another character, specific speeches, or characters from a specific author. Currently a work in progress migrating to NextJS."
